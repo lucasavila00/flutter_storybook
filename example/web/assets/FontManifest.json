@@ -64,6 +64,38 @@
     ]
   },
   {
+    "family": "SF UI Text",
+    "fonts": [
+      {
+        "asset": "fonts/SF/SF-UI-Text-Ultrathin.otf",
+        "weight": 100
+      },
+      {
+        "asset": "fonts/SF/SF-UI-Text-Light.otf",
+        "weight": 200
+      },
+      {
+        "asset": "fonts/SF/SF-UI-Text-Regular.otf"
+      },
+      {
+        "asset": "fonts/SF/SF-UI-Text-Medium.otf",
+        "weight": 500
+      },
+      {
+        "asset": "fonts/SF/SF-UI-Text-Semibold.otf",
+        "weight": 600
+      },
+      {
+        "asset": "fonts/SF/SF-UI-Text-Bold.otf",
+        "weight": 700
+      },
+      {
+        "asset": "fonts/SF/SF-UI-Text-Heavy.otf",
+        "weight": 800
+      }
+    ]
+  },
+  {
     "fonts": [{ "asset": "fonts/MaterialIcons-Regular.ttf" }],
     "family": "MaterialIcons"
   }
