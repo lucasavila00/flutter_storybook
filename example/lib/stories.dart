@@ -2,7 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_storybook/flutter_storybook.dart';
 import 'package:flutter_storybook_example/small_card.dart';
 
+// That's one story
+// You should extend StoryBase to be able to use the hooks
+// and have the type checker make sure you implemented
+// the name getter.
 class SmallCardStory extends StoryBase {
+  // This is the unique id and display name of this card
   @override
   String get name => 'Small Card';
 
@@ -19,6 +24,7 @@ class SmallCardStory extends StoryBase {
     // go to another story
     final void Function() goToMore = useStory('Big Card');
 
+    // Remember to return a StoryPage
     return StoryPage(
       builder: (BuildContext context) => SmallCard(
         online: online,

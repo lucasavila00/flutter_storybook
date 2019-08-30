@@ -18,7 +18,7 @@ class TabRenderer extends StatelessWidget {
       children: <Widget>[
         Expanded(
           child: Container(
-            color: Colors.grey[200],
+            color: Colors.white,
             child: Center(
               child: ViewportSizer(
                 viewport: viewport,
@@ -44,6 +44,11 @@ class ViewportSizer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      decoration: BoxDecoration(
+          border: Border.all(
+        width: 1.0,
+        color: Colors.black54,
+      )),
       width: viewport.mediaQueryData.size.width,
       height: viewport.mediaQueryData.size.height,
       child: MediaQuery(

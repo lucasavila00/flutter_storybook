@@ -39,6 +39,7 @@ class StoryPage extends StatelessWidget {
             StoryContext.of(context).name,
           ),
           bottom: TabBar(
+            labelColor: Colors.white,
             tabs: (viewports ?? StoryContext.of(context).appViewports).map((v) {
               return Tab(
                 text: v.name,

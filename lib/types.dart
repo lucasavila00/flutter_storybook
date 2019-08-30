@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 
+/// Enables Hooks and makes sure name is provided
 abstract class StoryBase extends HookWidget {
   String get name;
 }
 
+/// The data needed to describe the app
+/// running environment
 class StoryViewport {
   final String name;
   final MediaQueryData mediaQueryData;

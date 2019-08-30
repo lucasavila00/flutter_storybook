@@ -1,16 +1,15 @@
-# flutter_storybook_example
+# Running the storybook
 
-Demonstrates how to use the flutter_storybook plugin.
+Assuming you have installed and activated desktop and web support on flutter
 
-## Getting Started
+## macOS
 
-This project is a starting point for a Flutter application.
+\$ flutter run -d macOS -t lib/macos.dart
 
-A few resources to get you started if this is your first Flutter project:
+## web
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+\$ flutter run -d chrome -t lib/macos.dart
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Running the ground thruth
+
+\$ flutter run -d 'Your Phone Name'
