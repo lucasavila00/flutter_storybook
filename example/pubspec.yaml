@@ -45,3 +45,39 @@ flutter:
           weight: 700
         - asset: fonts/Roboto/Roboto-Black.ttf
           weight: 900
+    - family: .SF UI Text
+      fonts:
+        - asset: fonts/SF/SF-UI-Text-Ultrathin.otf
+          weight: 100
+        - asset: fonts/SF/SF-UI-Text-Light.otf
+          weight: 200
+        - asset: fonts/SF/SF-UI-Text-Regular.otf
+          weight: 400
+        - asset: fonts/SF/SF-UI-Text-Medium.ttf
+          weight: 500
+        - asset: fonts/SF/SF-UI-Text-Semibold.otf
+          weight: 600
+        - asset: fonts/SF/SF-UI-Text-Bold.otf
+          weight: 700
+        - asset: fonts/SF/SF-UI-Text-Heavy.otf
+          weight: 800
+    - family: .SF UI Display
+      fonts:
+        - asset: fonts/SF/SF-UI-Display-Ultralight.otf
+          weight: 100
+        - asset: fonts/SF/SF-UI-Display-Light.otf
+          weight: 200
+        - asset: fonts/SF/SF-UI-Display-Thin.otf
+          weight: 300
+        - asset: fonts/SF/SF-UI-Display-Regular.otf
+          weight: 400
+        - asset: fonts/SF/SF-UI-Display-Medium.otf
+          weight: 500
+        - asset: fonts/SF/SF-UI-Display-Semibold.otf
+          weight: 600
+        - asset: fonts/SF/SF-UI-Display-Bold.otf
+          weight: 700
+        - asset: fonts/SF/SF-UI-Display-Heavy.otf
+          weight: 800
+        - asset: fonts/SF/SF-UI-Display-Black.otf
+          weight: 900

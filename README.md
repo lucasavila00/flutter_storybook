@@ -2,6 +2,7 @@
 
 Storybooks for Flutter.
 Run on macOS for fast development or the web to share results.
+Early development.
 
 ## Getting Started
 
@@ -19,6 +20,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_storybook/flutter_storybook.dart';
 
 void main() {
+  // Only needed for macOS
   // See https://github.com/flutter/flutter/wiki/Desktop-shells#target-platform-override
   debugDefaultTargetPlatformOverride = TargetPlatform.fuchsia;
 

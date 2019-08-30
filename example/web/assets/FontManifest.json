@@ -24,7 +24,7 @@
     ]
   },
   {
-    "family": "SF UI Display",
+    "family": ".SF UI Display",
     "fonts": [
       {
         "asset": "fonts/SF/SF-UI-Display-Ultralight.otf",
@@ -64,7 +64,7 @@
     ]
   },
   {
-    "family": "SF UI Text",
+    "family": ".SF UI Text",
     "fonts": [
       {
         "asset": "fonts/SF/SF-UI-Text-Ultrathin.otf",
