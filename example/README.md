@@ -8,7 +8,7 @@ Assuming you have installed and activated desktop and web support on flutter
 
 ## web
 
-\$ flutter run -d chrome -t lib/macos.dart
+\$ flutter run -d chrome -t lib/web.dart
 
 # Running the ground thruth
 
