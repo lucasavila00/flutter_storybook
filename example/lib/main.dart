@@ -6,19 +6,15 @@ void main() {
     MaterialApp(
       title: 'Flutter Storybook',
       home: Scaffold(
-        body:Builder(
-
-          builder: (BuildContext context ) { 
-            print(MediaQuery.of(context));
-            print(Theme.of(context));
-         return SmallCard(
-          online: false,
-          name: 'Jhon',
-          age: 55,
-          onStarsPressed: (int stars) => {},
-          seeMore: () {},
-        );}
-        ),
+        body: Builder(builder: (BuildContext context) {
+          return SmallCard(
+            online: false,
+            name: 'Jhon',
+            age: 55,
+            onStarsPressed: (int stars) => {},
+            seeMore: () {},
+          );
+        }),
       ),
     ),
   );

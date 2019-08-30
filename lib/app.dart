@@ -38,16 +38,45 @@ List<StoryViewport> defaultViewports = [
     mediaQueryData: MediaQueryData(
       size: Size(414.0, 736.0),
       devicePixelRatio: 3.0,
-      //  textScaleFactor: 1.0, platformBrightness: Brightness.light, padding: EdgeInsets(0.0, 20.0, 0.0, 0.0), viewPadding: EdgeInsets(0.0, 20.0, 0.0, 0.0), viewInsets: EdgeInsets.zero, physicalDepth: 1.7976931348623157e+308, alwaysUse24HourFormat: false, accessibleNavigation: false, highContrast: false,disableAnimations: false, invertColors: false, boldText: false
-      ),
-    themeData: ThemeData(platform: TargetPlatform.iOS),
-    // devicePixelRatio: 3.0,
-    // height: 1920,
-    // width: 1080,
-    // orientation: Orientation.portrait,
-    platform: TargetPlatform.iOS,
+      textScaleFactor: 1.0,
+      platformBrightness: Brightness.light,
+      padding: EdgeInsets.fromLTRB(0.0, 20.0, 0.0, 0.0),
+      viewPadding: EdgeInsets.fromLTRB(0.0, 20.0, 0.0, 0.0),
+      viewInsets: EdgeInsets.zero,
+      physicalDepth: 1.7976931348623157e+308,
+      alwaysUse24HourFormat: false,
+      accessibleNavigation: false,
+      highContrast: false,
+      disableAnimations: false,
+      invertColors: false,
+      boldText: false,
+    ),
+    themeData: ThemeData(
+      platform: TargetPlatform.iOS,
+    ),
   ),
-
+  StoryViewport(
+    name: 'Android',
+    mediaQueryData: MediaQueryData(
+      size: Size(360.0, 640.0),
+      devicePixelRatio: 1.5,
+      textScaleFactor: 1.0,
+      platformBrightness: Brightness.light,
+      padding: EdgeInsets(0.0, 24.0, 0.0, 0.0),
+      viewPadding: EdgeInsets(0.0, 24.0, 0.0, 0.0),
+      viewInsets: EdgeInsets.zero,
+      physicalDepth: 1.7976931348623157e+308,
+      alwaysUse24HourFormat: true,
+      accessibleNavigation: false,
+      highContrast: false,
+      disableAnimations: false,
+      invertColors: false,
+      boldText: false,
+    ),
+    themeData: ThemeData(
+      platform: TargetPlatform.android,
+    ),
+  ),
 ];
 
 class StoryApp extends StatelessWidget {

@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 
+void printWrapped(String text) {
+  final pattern = new RegExp('.{1,800}'); // 800 is the size of each chunk
+  pattern.allMatches(text).forEach((match) => print(match.group(0)));
+}
+
 class SmallCard extends StatelessWidget {
   final bool online;
   final String name;
@@ -18,6 +23,8 @@ class SmallCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // printWrapped(Theme.of(context).typography.toString());
+    printWrapped(MediaQuery.of(context).toString());
     return Card(
       child: Column(
         mainAxisSize: MainAxisSize.min,

@@ -42,7 +42,7 @@ class StorybookAction {
 class StoryViewport {
   final String name;
   // final Orientation orientation;
-  final TargetPlatform platform;
+  // final TargetPlatform platform;
 
   // final double _height;
   // final double _width;
@@ -56,17 +56,15 @@ class StoryViewport {
   final ThemeData themeData;
 
   const StoryViewport({
-
     @required this.name,
-
     @required this.mediaQueryData,
     @required this.themeData,
 
     // @required this.orientation,
-    @required this.platform,
+    // @required this.platform,
     // @required this.devicePixelRatio,
 
     // @required double height,
     // @required double width,
-  })  ;
+  });
 }
