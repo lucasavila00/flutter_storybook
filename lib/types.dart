@@ -1,6 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 
+abstract class StoryBase extends HookWidget {
+  String get name;
+}
+
+class StoryViewport {
+  final String name;
+  final MediaQueryData mediaQueryData;
+  final ThemeData themeData;
+
+  const StoryViewport({
+    @required this.name,
+    @required this.mediaQueryData,
+    @required this.themeData,
+  });
+}
+
 abstract class KnobWrapperBase<T> {
   String get name;
   T get value;
@@ -20,10 +36,6 @@ class KnobWrapperPrimitive<T> extends KnobWrapperBase<T> {
   set value(T v) => valueNotifier.value = v;
 }
 
-abstract class StoryBase extends HookWidget {
-  String get name;
-}
-
 class StorybookAction {
   final String name;
   final String text;
@@ -37,34 +49,4 @@ class StorybookAction {
   String toString() {
     return "$name: $text";
   }
-}
-
-class StoryViewport {
-  final String name;
-  // final Orientation orientation;
-  // final TargetPlatform platform;
-
-  // final double _height;
-  // final double _width;
-  // final double devicePixelRatio;
-  // double get width =>
-  //     (orientation == Orientation.portrait ? _width : _height);
-  // double get height =>
-  //     (orientation == Orientation.portrait ? _height : _width);
-
-  final MediaQueryData mediaQueryData;
-  final ThemeData themeData;
-
-  const StoryViewport({
-    @required this.name,
-    @required this.mediaQueryData,
-    @required this.themeData,
-
-    // @required this.orientation,
-    // @required this.platform,
-    // @required this.devicePixelRatio,
-
-    // @required double height,
-    // @required double width,
-  });
 }

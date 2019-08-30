@@ -23,8 +23,6 @@ class SmallCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // printWrapped(Theme.of(context).typography.toString());
-    printWrapped(MediaQuery.of(context).toString());
     return Card(
       child: Column(
         mainAxisSize: MainAxisSize.min,

@@ -17,9 +17,7 @@ class ActionsRenderer extends HookWidget {
     final _actions = useState(<StorybookAction>[]);
 
     useEffect(() {
-      if (actions == null) {
-        return () {};
-      }
+      assert(actions != null);
 
       void onData(StorybookAction a) {
         _actions.value = [..._actions.value, a];

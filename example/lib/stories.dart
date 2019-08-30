@@ -10,8 +10,8 @@ class SmallCardStory extends StoryBase {
   Widget build(BuildContext context) {
     // only bool, int and String knobs are supported
     final bool online = useKnob(false, 'Online');
-    final String name = useKnob('Jhon', 'Name');
     final int age = useKnob(55, 'Age');
+    final String name = useKnob('Jhon', 'Name');
 
     // use action will log it to the actions pannel
     final void Function(String) logStars = useAction('Gave Star');
@@ -41,13 +41,6 @@ class BigCardStory extends StoryBase {
       // If you need a different viewport just for this story
       // viewports: <StoryViewport>[
       //   ...defaultViewports,
-      //   StoryViewport(
-      //     name: 'Ipad 2 Up',
-      //     width: 768,
-      //     height: 1024,
-      //     orientation: Orientation.landscape,
-      //     platform: TargetPlatform.iOS,
-      //   )
       // ],
       builder: (BuildContext context) {
         return Container(

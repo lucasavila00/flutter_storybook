@@ -32,5 +32,5 @@ class StoryContext extends InheritedWidget {
 
   @override
   bool updateShouldNotify(StoryContext oldWidget) =>
-      name != oldWidget.name || knobs != oldWidget.knobs;
+      name != oldWidget.name || knobs.length != oldWidget.knobs.length;
 }
