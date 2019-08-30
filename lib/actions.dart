@@ -2,6 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:flutter_storybook/types.dart';
 
+class StorybookActionTimed extends StorybookAction {
+  StorybookActionTimed({
+    @required this.when,
+    @required String name,
+    @required String text,
+  }) : super(name: name, text: text);
+
+  final DateTime when;
+}
+
 class ActionsRenderer extends HookWidget {
   ActionsRenderer({
     Key key,
@@ -14,13 +24,18 @@ class ActionsRenderer extends HookWidget {
   final double height;
   @override
   Widget build(BuildContext context) {
-    final _actions = useState(<StorybookAction>[]);
+    final _actions = useState(<StorybookActionTimed>[]);
 
     useEffect(() {
       assert(actions != null);
 
       void onData(StorybookAction a) {
-        _actions.value = [..._actions.value, a];
+        final now = DateTime.now().toLocal();
+
+        _actions.value = [
+          ..._actions.value,
+          StorybookActionTimed(name: a.name, when: now, text: a.text),
+        ];
       }
 
       final sub = actions.listen(onData);
@@ -41,10 +56,9 @@ class ActionsRenderer extends HookWidget {
           child: ListView(
             reverse: true,
             children: _actions.value.reversed.map((x) {
-              final now = DateTime.now().toLocal().toString();
               return Container(
                 padding: EdgeInsets.all(8),
-                child: Text('$now: $x'),
+                child: Text('${x.when}- ${x.name}: ${x.text}'),
               );
             }).toList(),
           ),

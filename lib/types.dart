@@ -47,9 +47,4 @@ class StorybookAction {
     @required this.name,
     @required this.text,
   });
-
-  @override
-  String toString() {
-    return "$name: $text";
-  }
 }
