@@ -96,7 +96,7 @@ import 'package:flutter_storybook/flutter_storybook.dart';
 void main() async {
   await loadDefaultGoldenFonts();
   goldenStories(
-    [
+    stories: [
       SmallCardStory(),
     ],
   );

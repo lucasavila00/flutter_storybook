@@ -64,8 +64,8 @@ Container Function(Viewport) _showcaseBuilder({
           ),
         );
 
-void goldenStories(
-  List<StoryBase> stories, {
+void goldenStories({
+  @required List<StoryBase> stories,
   List<StoryViewport> viewports,
 }) {
   (viewports ?? defaultViewports).forEach(

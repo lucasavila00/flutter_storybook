@@ -4,7 +4,7 @@ import 'package:flutter_storybook_example/stories.dart';
 void main() async {
   await loadDefaultGoldenFonts();
   goldenStories(
-    [
+    stories: [
       SmallCardStory(),
       BigCardStory(),
     ],
