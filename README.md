@@ -1,7 +1,11 @@
 # flutter_storybook
 
 Storybooks for Flutter.
+
 Run on macOS for fast development or the web to share results.
+
+Easily have golden tests for all your stories.
+
 Early development.
 
 ## Getting Started
