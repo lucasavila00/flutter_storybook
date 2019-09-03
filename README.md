@@ -83,7 +83,7 @@ class SmallCardStory extends StoryBase {
 \$ flutter run -d chrome -t lib/stories.dart
 
 
-# Golden tests
+# Golden Tests
 
 ```dart
 // lib/golden.dart
