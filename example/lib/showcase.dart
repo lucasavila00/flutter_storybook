@@ -20,6 +20,13 @@ void main() async {
     ..addFont(fontDataSF);
   await fontLoaderSf.load();
 
+  final fontDataSF2 = File('fonts/SF/SF-UI-Display-Regular.otf')
+      .readAsBytes()
+      .then((bytes) => ByteData.view(Uint8List.fromList(bytes).buffer));
+  final FontLoader fontLoaderSf2 = FontLoader('.SF UI Display')
+    ..addFont(fontDataSF2);
+  await fontLoaderSf2.load();
+
   final fontDataIcons = File('fonts/MaterialIcons-Regular.ttf')
       .readAsBytes()
       .then((bytes) => ByteData.view(Uint8List.fromList(bytes).buffer));
