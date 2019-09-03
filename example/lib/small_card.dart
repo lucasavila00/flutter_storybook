@@ -37,7 +37,6 @@ class SmallCard extends StatelessWidget {
                 child: const Text('1 STAR'),
                 onPressed: () {
                   onStarsPressed(1);
-                  // logLike('1');
                 },
               ),
               FlatButton(
