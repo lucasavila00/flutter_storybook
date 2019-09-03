@@ -11,7 +11,6 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_hooks: ^0.6.0
-  showcase: <1.0.0
 
 dev_dependencies:
   flutter_test:

@@ -34,8 +34,11 @@ void main() async {
     ..addFont(fontDataIcons);
   await fontLoaderIcons.load();
 
-  showcaseStories([
-    SmallCardStory(),
-    BigCardStory(),
-  ]);
+  goldenStories(
+    [
+      SmallCardStory(),
+      BigCardStory(),
+    ],
+    // viewports: [defaultViewports[0]],
+  );
 }
