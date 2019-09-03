@@ -11,8 +11,10 @@ class StoryContext extends InheritedWidget {
     @required this.routeNames,
     @required this.actionsController,
     @required this.appViewports,
+    @required this.showcase,
   }) : super(key: key, child: child);
 
+  final bool showcase;
   final String name;
   final List<String> routeNames;
   final knobs = <KnobWrapperBase>[];

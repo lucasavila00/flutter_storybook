@@ -17,6 +17,9 @@ class StoryPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    if (StoryContext.of(context).showcase) {
+      return builder(context);
+    }
     return DefaultTabController(
       length: (viewports ?? StoryContext.of(context).appViewports).length,
       child: Scaffold(

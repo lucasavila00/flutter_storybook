@@ -113,6 +113,7 @@ class _StoryWithController extends HookWidget {
       routeNames: routeNames,
       actionsController: controller,
       appViewports: appViewports,
+      showcase: false,
     );
   }
 }
