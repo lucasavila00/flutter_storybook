@@ -81,3 +81,23 @@ class SmallCardStory extends StoryBase {
 #### web
 
 \$ flutter run -d chrome -t lib/stories.dart
+
+
+# Golden tests
+
+```dart
+// lib/golden.dart
+import 'package:flutter_storybook/flutter_storybook.dart';
+
+void main() async {
+  await loadDefaultGoldenFonts();
+  goldenStories(
+    [
+      SmallCardStory(),
+    ],
+  );
+}
+```
+
+## Run it
+$  flutter test lib/golden.dart 
